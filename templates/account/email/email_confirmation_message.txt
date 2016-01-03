@@ -1,0 +1,14 @@
+{% load account %}{% user_display user as user_display %}{% load i18n %}{% autoescape off %}Hello!
+
+Don't worry, we hate spammy emails just as much as you, so we'll rarely send them.
+
+You're receiving this email because user {{ user_display }} at http://127.0.0.1:54040/#/ has provided yours as an email address to connect their account.
+
+To confirm this email address is correct, please go to:
+ {% with "http://127.0.0.1:54040/#/email-confirmation/"|add:key as url %}
+    {{url}}
+ {% endwith %}
+
+{% endautoescape %}
+Thanks!
+
