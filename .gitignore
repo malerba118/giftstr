@@ -1,0 +1,3 @@
+*.pyc
+gift_finder/confidential.py
+db.sqlite3
