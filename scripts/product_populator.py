@@ -2,7 +2,7 @@ __author__ = 'austin'
 
 from api.models import Product
 
-f = open("scripts/asins_better.txt")
+f = open("scripts/initial_products_list.txt")
 
 
 for line in f:
