@@ -16,7 +16,6 @@ class AmazonService:
 
     @staticmethod
     def productLookup(ASIN):
-        print(ASIN)
         response = AmazonService.amazon.ItemLookup(
             ItemId=ASIN,
             IdType="ASIN",

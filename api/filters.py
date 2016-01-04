@@ -12,7 +12,6 @@ class UserFilterBackend(BaseFilterBackend):
     """
     def filter_queryset(self, request, queryset, view):
         person_pk = request.GET.get("personId", None)
-        print(person_pk)
         person = get_object_or_404(Person, pk=person_pk)
         #Users that are not yet permitted to view this person and are not the current user
         return queryset.filter(~Q(pk__in=person.permitted.all()) & ~Q(pk=request.user.pk))
