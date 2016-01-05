@@ -142,20 +142,20 @@ if DEBUG:
     pass
     #EMAIL_BACKEND = 'django.core.mail.backends.dummy.EmailBackend'
 
-DEFAULT_FROM_EMAIL = 'malerba118@gmail.com'
-SERVER_EMAIL = 'malerba118@gmail.com'
+DEFAULT_FROM_EMAIL = 'giftstrstaff@gmail.com'
+SERVER_EMAIL = 'giftstrstaff@gmail.com'
 EMAIL_USE_TLS = True
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
-EMAIL_HOST_USER = 'malerba118@gmail.com'
+EMAIL_HOST_USER = 'giftstrstaff@gmail.com'
 EMAIL_HOST_PASSWORD = confidential.EMAIL_HOST_PASSWORD
 
 
 ACCOUNT_EMAIL_REQUIRED = True
 ACCOUNT_USERNAME_REQUIRED = True
 ACCOUNT_CONFIRM_EMAIL_ON_GET = False
-ACCOUNT_EMAIL_CONFIRMATION_AUTHENTICATED_REDIRECT_URL = "http://127.0.0.1:54040/#/"
-ACCOUNT_EMAIL_SUBJECT_PREFIX = "[http://127.0.0.1:54040] "
+ACCOUNT_EMAIL_CONFIRMATION_AUTHENTICATED_REDIRECT_URL = "http://giftstr.com/#/"
+ACCOUNT_EMAIL_SUBJECT_PREFIX = "[Giftstr] "
 
 
 
