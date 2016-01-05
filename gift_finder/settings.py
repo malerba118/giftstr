@@ -142,12 +142,12 @@ if DEBUG:
     pass
     #EMAIL_BACKEND = 'django.core.mail.backends.dummy.EmailBackend'
 
-DEFAULT_FROM_EMAIL = 'giftstrstaff@gmail.com'
-SERVER_EMAIL = 'giftstrstaff@gmail.com'
+DEFAULT_FROM_EMAIL = 'staff@giftstr.com'
+SERVER_EMAIL = 'staff@giftstr.com'
 EMAIL_USE_TLS = True
-EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_HOST = 'mail.giftstr.com'
 EMAIL_PORT = 587
-EMAIL_HOST_USER = 'giftstrstaff@gmail.com'
+EMAIL_HOST_USER = 'staff@giftstr.com'
 EMAIL_HOST_PASSWORD = confidential.EMAIL_HOST_PASSWORD
 
 
