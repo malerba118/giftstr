@@ -152,7 +152,7 @@ class LikeList(DynamicFieldsViewMixin, ListCreateAPIView):
     def get_queryset(self):
         person_pk = self.kwargs.get("pk", None)
         person = get_object_or_404(Person, pk=person_pk)
-        return person.likes.all()
+        return person.likes.all().order_by("ASIN")
 
     def create(self, request, *args, **kwargs):
         person_pk = kwargs.get("pk", None)
